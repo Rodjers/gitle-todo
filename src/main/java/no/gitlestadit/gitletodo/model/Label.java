@@ -1,6 +1,5 @@
 package no.gitlestadit.gitletodo.model;
 
-import java.util.List;
 import lombok.Builder;
 import lombok.Data;
 import lombok.Getter;
@@ -13,8 +12,6 @@ import lombok.Setter;
 @Getter
 @Setter
 @Builder
-public class Task {
-    String title;
-    String description;
-    List<Label> labels;
+public class Label {
+    String name;
 }
