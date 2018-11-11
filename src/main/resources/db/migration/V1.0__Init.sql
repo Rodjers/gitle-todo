@@ -2,12 +2,15 @@ CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 CREATE EXTENSION IF NOT EXISTS "ltree";
 
 CREATE TABLE label (
-  id UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
+  id UUID PRIMARY KEY,
   "user" UUID,
+  name VARCHAR(255),
   path ltree
 );
 
 CREATE TABLE task (
-  id UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
-  title VARCHAR
-)
+  id UUID PRIMARY KEY,
+  title VARCHAR(255)
+);
+
+INSERT INTO task values (uuid_generate_v4(), 'Task 1');

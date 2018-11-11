@@ -1,11 +1,7 @@
 package no.gitlestadit.gitletodo.model;
 
-import java.util.List;
 import java.util.UUID;
-import lombok.Builder;
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 /**
  * Author: oddgeir Created: 10.11.2018.
@@ -13,8 +9,8 @@ import lombok.Setter;
 @Data
 @Getter
 @Setter
-@Builder
-public class Task {
-    UUID id;
+@AllArgsConstructor
+@NoArgsConstructor
+public class NewTask {
     String title;
 }

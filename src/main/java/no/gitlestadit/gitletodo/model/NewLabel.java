@@ -13,7 +13,7 @@ import lombok.Setter;
 @Getter
 @Setter
 @Builder
-public class Label {
+public class NewLabel {
     UUID id;
     String name;
     String path;
